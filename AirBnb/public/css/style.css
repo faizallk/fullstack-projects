@@ -1,0 +1,141 @@
+*{
+    font-family: "Kulim Park", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+::selection{
+    color: white;
+    background-color: #fe424d;
+}
+.container{
+    flex: 1;
+    width: 100vw;
+}
+.btn{
+    background-color: #fe424d !important;
+    color: white !important;
+    border: none !important;
+ 
+}
+.btn:hover{
+    background-color: #f52331 !important;
+    border: none !important;
+}
+.navbar{
+    height: 5rem;
+    background-color: white !important;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: rgb(19, 18, 18) !important;
+    font-weight: 600 !important;
+    
+}
+.nav-link:hover{
+    color: rgba(20, 20, 20, 0.603) !important;
+   
+
+}
+.listing-card{
+    border: none !important;
+    
+}
+.align{
+  margin-left: 75px;
+}
+.row a{
+    text-decoration: none;
+    color:black;
+   
+}
+.card-img-top{
+    border-radius: 8px;
+    height: 100%;
+    margin: 0;
+}
+.card-body p{
+    
+    padding: 0;
+    margin: 0;
+}
+.card-img-overlay:hover{
+ background-color:white ;
+ opacity: 0.2;
+}
+.form-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+/* Footer */
+footer{
+    background-color: rgb(222, 222, 221);
+    position: sticky;
+    
+    text-align: center;
+}
+
+footer .icons i{
+  margin: 1rem;
+}
+footer .icons i:hover{
+    color: black;
+}
+img{
+    border-radius: 20px;
+    width: 70%;
+}
+
+/* review */
+
+
+
+/* icons nav */
+
+.listing{
+    margin-top: 5rem;
+  }
+
+  #iconsNav{
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 4rem;
+  }
+  .filter{
+    text-align: center;
+   margin: 2rem 1rem;
+    opacity: 0.7;
+  }
+  .filter p{
+    font-size: 0.8rem;
+  }
+  .filter:hover{
+    opacity: 1;
+  }
+
+  /* Navbar Search */
+.search-inp{
+    border-radius: 30px !important;
+    font-size: .9rem !important;
+}
+
+/* navbar collapse */
+/* .navbar{
+    position: relative;
+}*/
+.navbar-collapse{
+    background-color: white !important;
+    padding: 10px;
+} 
+.navbar-nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}

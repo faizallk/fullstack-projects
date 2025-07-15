@@ -1,0 +1,109 @@
+<% layout('layouts/boilerplate') -%>
+  
+  
+<style>
+  .form-switch{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 3.5rem;
+    padding: 1rem 10px; 
+  
+  }
+  
+</style>
+        <div id="iconsNav">
+          <div class="filter">
+            <div><i class="fa-solid fa-person-swimming"></i></div>
+            <p>Pools</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-icons"></i></div>
+            <p>Icons</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-cow"></i></div>
+            <p>Farms</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-umbrella-beach"></i></div>
+            <p>Beach</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-golf-ball-tee"></i></div>
+            <p>Golfing</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-brands fa-fort-awesome"></i></div>
+            <p>Castles</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-house"></i></div>
+            <p>Rooms</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-igloo"></i></div>
+            <p>Domes</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-city"></i></div>
+            <p>Top cities</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-regular fa-snowflake"></i></div>
+            <p>Arctic</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-mountain"></i></div>
+            <p>Mountains</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-key"></i></div>
+            <p>New</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-campground"></i></div>
+            <p>Camping</p>
+          </div>
+          <div class="filter">
+            <div><i class="fa-solid fa-sailboat"></i></div>
+            <p>Boats</p>
+          </div>
+          <!-- <div class="form-check-reverse form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
+          </div> -->
+        </div>
+
+
+    <div class="row offset-0 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xsm-1 ms-5 listing ">
+        
+     <% allListing.forEach(listing => { %>
+        
+           <div class="card listing-card" style="width: 21rem;">
+            <img src="<%= listing.image.url %>" class="card-img-top" >
+         <a href="/listings/<%= listing._id %>">
+        <div class="card-img-overlay"></div>
+            <div class="card-body">
+              <p class="card-text"><b><%= listing.title %></b>
+            <br>
+                  <p>&#8377;<%= listing.price.toLocaleString("en-IN") %></p></p>
+            </div></a>
+          </div> 
+          <% }) %>
+        </div>
+    
+  
+<!--     
+    <br><br>
+    <ul>
+    <% allListing.forEach(listing => { %>
+        <li><a href="http://localhost:3000/listings/<%= listing._id %>"><%= listing.title%></a></li>
+        <form method="GET" action="/listings/<%= listing._id %>/edit">
+            <button>Edit</button>
+        </form>
+        <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+            <button>Delete</button>
+        </form>
+    <% }) %></ul>
+    -->
+

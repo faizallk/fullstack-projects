@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate') -%>
+    
+
+<div class="row">
+    <h1 class="col-6 offset-3 mt-3">Login on <span style="color: #ff3442 ;font-weight: 700;">AirBnb</span></h1>
+    <div class="col-6 offset-3">
+        <form method="POST" action="/users/login"  novalidate class="needs-validation">
+            <div class="mb-3 ">
+                <label for="title" class="form-label">Username*</label>
+                 <input type="text" name="username" class="form-control" placeholder="Username" required >
+                 <!-- <div class="invalid-feedback"></div> -->
+                 
+            </div>
+            <div class="mb-3 ">
+                <label for="title" class="form-label">Password*</label>
+                 <input type="password" name="password" class="form-control" id="showPass" placeholder="Password" required >
+                 <!-- <div class="invalid-feedback"></div> -->
+                 <input type="checkbox" class="form-check-input mt-3" id="checkbox">
+                 <label for="checkbox" class="mt-3 fs-6" >Show Password</label>
+            </div>
+            <button class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
