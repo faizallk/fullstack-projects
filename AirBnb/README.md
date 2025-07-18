@@ -70,18 +70,7 @@ npm run dev
 
 Open your browser at: `http://localhost:3000`
 
----
 
-## 📸 Screenshots
-
-You can add screenshots of your UI by placing images in the `screenshots/` folder and using:
-
-```markdown
-![Home Page](<img width="1876" height="896" alt="image" src="https://github.com/user-attachments/assets/d9c74d1a-15df-47c1-af99-43d0ae4f8ce9" />
-)
-```
-
----
 
 ## 🤝 Contributing
 
