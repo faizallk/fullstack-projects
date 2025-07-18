@@ -1,42 +1,97 @@
-# 🏡 Airbnb Clone (Full-Stack Project)
 
-This is a full-featured **Airbnb-like rental web application** built using **Node.js**, **Express**, **EJS**, and **MongoDB**. It includes full **CRUD functionality**, secure **authentication with Passport.js**, and **Cloudinary integration** for image uploads.
+# 🏡 Airbnb Clone – Full Stack Web App
 
----
-
-## 📌 Features
-
-- 🧑‍💼 User registration and login with Passport.js
-- 🔐 Secure authentication and role-based authorization
-- 🏘️ CRUD operations for listing properties (Create, Read, Update, Delete)
-- 🖼️ Cloudinary integration for image uploads
-- 🌍 Location and pricing for rental listings
-- 💬 Flash messages for notifications (success/error)
-- 📱 Fully responsive using Bootstrap
+This is a full-featured **Airbnb-like rental application** built using **Node.js, Express, MongoDB**, and **EJS templating** on the backend. It includes user authentication via **Passport.js**, full **CRUD functionality**, and image uploads using **Cloudinary**. The frontend is crafted with **HTML, CSS, Bootstrap, and EJS views**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Features
 
-**Frontend:**
-- HTML5, CSS3, Bootstrap
-- EJS templating engine
-
-**Backend:**
-- Node.js
-- Express.js
-- MongoDB & Mongoose
-- Passport.js (Authentication)
-- Cloudinary (Image hosting)
+- 🔐 User Authentication with Passport.js
+- 🏘️ CRUD operations for Listings and Bookings
+- 🖼️ Image Uploads using Cloudinary
+- 🎨 Responsive UI with Bootstrap and EJS
+- 🌐 RESTful routes and modular architecture
+- ⚙️ Secure sessions and route protection
 
 ---
 
-## 🏗️ Folder Structure
+## 📁 Project Structure
 
-**AirBnb/**
-├── views/ # EJS templates
-├── public/ # Static assets (CSS, JS, Images)
-├── routes/ # Express route handlers
-├── models/ # Mongoose schemas
-├── app.js # Main server file
-└── package.json
+```
+airbnb-clone/
+├── views/         # EJS templates (frontend)
+├── public/        # Static files (CSS, JS, Images)
+├── routes/        # Route controllers (Express)
+├── models/        # Mongoose models (User, Listing, etc.)
+├── config/        # DB & Passport configuration
+├── app.js         # Entry point
+└── package.json   # Project dependencies
+```
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/faizallk/fullstack-projects.git
+cd fullstack-projects/airbnb-clone
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Configure environment variables**
+
+Create a `.env` file in the root directory and add:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+SESSION_SECRET=your_session_secret
+```
+
+4. **Run the development server**
+
+```bash
+npm start
+```
+
+Open your browser at: `http://localhost:3000`
+
+---
+
+## 📸 Screenshots
+
+You can add screenshots of your UI by placing images in the `screenshots/` folder and using:
+
+```markdown
+![Home Page](screenshots/home.png)
+```
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and contribute via pull requests. Any suggestions, improvements, or bug fixes are welcome!
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+**Faizal Khan**  
+GitHub: [@faizallk](https://github.com/faizallk)  
+LinkedIn: [faijalkhann](https://www.linkedin.com/in/faijalkhann/)
