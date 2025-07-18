@@ -33,7 +33,7 @@ This is a full-featured **Airbnb-like rental web application** built using **Nod
 
 ## 🏗️ Folder Structure
 
-AirBnb/
+**AirBnb/**
 ├── views/ # EJS templates
 ├── public/ # Static assets (CSS, JS, Images)
 ├── routes/ # Express route handlers
